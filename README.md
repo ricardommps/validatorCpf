@@ -18,8 +18,6 @@ Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
 ## Quick start of api without docker
 
-```bash
-
 # Go inside the directory
 cd validatorCpf/api
 
@@ -34,7 +32,6 @@ npm test
 
 ## Quick start of client without docker
 
-```bash
 
 # Go inside the directory
 cd validatorCpf/client
