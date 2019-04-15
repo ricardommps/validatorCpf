@@ -9,10 +9,6 @@ const routes = [
 		component: StatusServer
 	},
 	{
-		path: '/redeux-form',
-		component: ReduxFormPage
-	},
-	{
 		path: '/home',
 		component: Home,
 		state: {}

@@ -4,9 +4,6 @@ import * as constants from './constants';
 
 //const BASE_URL = constants.REACT_APP_API_BACKEND;
 const BASE_URL = `${constants.REACT_APP_API_BACKEND}`;
-console.log("<<<< BASE_URL",BASE_URL);
-console.log("<<<< REACT_APP_API_BACKEND",constants.REACT_APP_API_BACKEND)
-console.log("ENV",process.env)
 class ClientService {
     clients() {
         return axios

@@ -83,16 +83,13 @@ export const validateCnpj = (value, all, props) => {
 };
 
 export const formatCpfCnpj = (value, all, props) => {
-  console.log(">>formatCpfCnpj",value.length)
   if (value.length < 15) {
-    console.log(">>>FORMATA CPF")
     //CPF 
     if (value === '000.000.000-00') {
       return value;
     }
     return CPF_MASK.resolve(value);
   } else {
-    console.log(">>>FORMATA CNPJ")
     //CNPJ
     if (value === '00.000.000/0000-00') {
       return value;
@@ -104,9 +101,7 @@ export const formatCpfCnpj = (value, all, props) => {
 
 
 export const validateCpfCnpj = (value, all, props) => {
-  console.log(">>validateCpfCnpj",value.length)
   if (value.length < 15) {
-    console.log(">>>VALIDA CPF")
     //CPF 
     if (value === '000.000.000-00') {
       return undefined;
@@ -118,7 +113,6 @@ export const validateCpfCnpj = (value, all, props) => {
   
     return 'CPF invalid';
   } else {
-    console.log(">>>VALIDA CNPJ")
     //CNPJ
     if (value === '00.000.000/0000-00') {
       return undefined;

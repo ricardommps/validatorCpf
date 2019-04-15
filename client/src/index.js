@@ -13,7 +13,6 @@ import * as serviceWorker from './serviceWorker';
 import routes from './routes';
 
 // Render do App
-console.log(">>PUBLIC_URL",process.env.PUBLIC_URL)
 const basename = process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/';
 
 const Root = (

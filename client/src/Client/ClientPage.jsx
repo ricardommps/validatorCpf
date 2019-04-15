@@ -49,18 +49,13 @@ class ClientPage extends Component {
         if (idClient) {
             this.props.getClientById(idClient)
             .then((result) => {
-                console.log("CLIENTBYID>>",result)
                 this.props.initialize(this.props.clientById)
             })
         }
-
-
     }
 
     handleSave = () => {
-        console.log("<<<Form Submit values>>>", this.props.formCriarContaValues)
         const client = this.props.formCriarContaValues;
-
         this.props.createClient(client)
         .then((response) => {
             ToastManager.showSuccessMessage("Cliente criado com sucesso!");
@@ -74,7 +69,6 @@ class ClientPage extends Component {
     render() {
         const { clientById, handleSubmit, pristine, reset, valid, submitting  } = this.props;
         const typePerson = this.state.typePerson
-        console.log(">>>PROPS>>>",this.props)
         return (
             <React.Fragment>
                 {typePerson}
