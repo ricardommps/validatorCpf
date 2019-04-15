@@ -1,6 +1,7 @@
 ## Quick start with Docker
 
-```bash
+
+```sh
 # Clone the repository
 git clone https://github.com/ricardommps/validatorCpf
 
@@ -12,12 +13,12 @@ docker-compose build
 
 # Make Docker spin up the containers, just run:
 docker-compose up
+```
+Then open [http://localhost:3001/](http://localhost:3001/) to see your app.<br>
 
-Runs the app.<br>
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+### Quick start of api without docker
 
-## Quick start of api without docker
-
+```sh
 # Go inside the directory
 cd validatorCpf/api
 
@@ -29,10 +30,12 @@ npm start
 
 # Start test
 npm test
+```
 
-## Quick start of client without docker
 
+### Quick start of client without docker
 
+```sh
 # Go inside the directory
 cd validatorCpf/client
 
@@ -41,9 +44,8 @@ npm install
 
 # Start development server
 npm start
+```
 
-Runs the api server.<br>
-Open [http://localhost:9000](http://localhost:9000) to view it in the browser.
+Then open [http://localhost:9000/](http://localhost:9000/) to see your api server.<br>
 
-Runs the client react.<br>
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+Then open [http://localhost:3001/](http://localhost:3001/) to see your app react.<br>
